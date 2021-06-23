@@ -1,0 +1,17 @@
+{
+  // Lib de padronização de código TS
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+      // Informa para o ESlint que será utilizado as configurações desse arquivo
+      "project": "./tsconfig.json"
+  },
+  "rules": {
+      "@typescript-eslint/strict-boolean-expressions": "off",
+      "@typescript-eslint/no-misused-promises": [
+        "error",
+        {
+          "checksVoidReturn": false
+        }
+      ]
+  }
+}
